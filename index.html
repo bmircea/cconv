@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	<meta charset="utf-8">
+	<title>Convertor Valutar</title>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	</head>
+	
+	<body>
+		
+
+		
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="popper.js"></script>
+		<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+
+		
+
+
+		<div class="jumbotron jumbotron-fluid" id="jumbo">
+  			
+  			<div class="container-fluid" id="conv-form">
+  				<table style="height: 100%; width: 100%;">
+  					<tbody>
+  						<tr>
+  							<td class="align-middle text-center">
+  								<div class="d-flex flex-row justify-content-center">
+  									<form>
+  										<div class="form-group row">
+    										<!-- <div class="col-md-auto noshadow">Valoare:</div> -->
+    										<div class="col-xs-2">
+    											<input type="text" class="form-control-file valIn" id="inputSus" style="height: 100% !important; border-radius: 5px !important;" placeholder="Valoare">
+    										</div>
+  										
+
+  										<div class="dropdown col-xs-2">
+  											<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonFromJumbo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EUR</button>
+  											<div class="dropdown-menu" id="myDropD"	aria-labelledby="dropdownMenuButton">
+    											<a class="dropdown-item fromJumbo" href="#">EUR</a>
+    											<a class="dropdown-item fromJumbo" href="#">USD</a>
+    											<a class="dropdown-item fromJumbo" href="#">RON</a>
+  											</div>
+  										</div>
+
+  										<div class="col-xs-2">
+  											<button class="btn btn-primary" type="button" id="switchJumbo">⇄</button>
+  										</div>
+
+  										<div class="dropdown col-xs-2">
+  											<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonToJumbo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EUR</button>
+  											<div class="dropdown-menu" id="myDropD"	aria-labelledby="dropdownMenuButton">
+    											<a class="dropdown-item toJumbo" href="#">EUR</a>
+    											<a class="dropdown-item toJumbo" href="#">USD</a>
+    											<a class="dropdown-item toJumbo" href="#">RON</a>
+  											</div>
+  										</div>
+
+  										<div class="col-xs-2">
+  											<button class="btn btn-primary" type="button" id="convJumbo">⇒</button>
+  										</div>
+  										
+  										</div>
+									</form>
+  								</div>
+  									
+  							</td>
+  							
+  						</tr>
+  					</tbody>
+  					
+  				</table>
+  				
+  			</div>
+
+		</div>
+		<div id="main" class ="center">
+			<div class="btn-group button-wrap" role="group">
+				<button type="button" class="btn btn-primary tab btn-left">Converteste</button>
+				<button type="button" class="btn btn-primary tab btn-right">Despre</button>
+			</div>
+			<div class = "container-fluid" id="content-wrap">
+				<div id="contentA" class="content">
+					<div class="jumbotron jumbotron-fluid" id="jumboMain"></div>
+					<table style="height: 100%; width: 100%;">
+  					<tbody>
+  						<tr>
+  							<td class="align-middle text-center">
+  								<div class="d-flex flex-row justify-content-center">
+  									<form>
+  										<div class="form-group row">
+    										<!-- <div class="col-md-auto noshadow">Valoare:</div> -->
+    										<div class="col-xs-2">
+    											<input type="text" class="form-control-file valIn" id="inputJos" style="height: 100% !important; border-radius: 5px !important;" placeholder="Valoare">
+    										</div>
+  										
+
+  										<div class="dropdown col-xs-2">
+  											<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonFromMain" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EUR</button>
+  											<div class="dropdown-menu" id="myDropD"	aria-labelledby="dropdownMenuButton">
+    											<a class="dropdown-item fromMain" href="#">EUR</a>
+    											<a class="dropdown-item fromMain" href="#">USD</a>
+    											<a class="dropdown-item fromMain" href="#">RON</a>
+  											</div>
+  										</div>
+
+  										<div class="col-xs-2">
+  											<button class="btn btn-primary" type="button" id="switchMain">⇄</button>
+  										</div>
+
+  										<div class="dropdown col-xs-2">
+  											<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonToMain" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EUR</button>
+  											<div class="dropdown-menu" id="myDropD"	aria-labelledby="dropdownMenuButton">
+    											<a class="dropdown-item toMain" href="#">EUR</a>
+    											<a class="dropdown-item toMain" href="#">USD</a>
+    											<a class="dropdown-item toMain" href="#">RON</a>
+  											</div>
+  										</div>
+
+  										<div class="col-xs-2">
+  											<button class="btn btn-primary" type="button" id="convMain">⇒</button>
+  										</div>	
+  										
+  										</div>
+									</form>
+  								</div>
+  									
+  							</td>
+  							
+  						</tr>
+  						<tr>
+  							<td class="align-middle text-center">
+  								<div class="col-xs-2" id="rezultat-conversie"></div>
+  							</td>
+  						</tr>
+  					</tbody>
+  					
+  				</table>
+				</div>
+				<div id="contentB" class="content d-none">
+					A
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<script src="actions.js"></script>
+		<script src="anim.js"></script>
+		
+	</body>
+
+
+
+
+
+</html>
